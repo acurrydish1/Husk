@@ -105,17 +105,21 @@ We're going to have you split up into groups, help to [i] diversify [/i] your sk
 		You respond in the affirmative this time. "Good! Now, you can come with me, or stay behind. The other instructor will be here after I leave you all behind."
 		*choice
 			#Go with the Husk.
-				*goto_scene warmup
+				Rich rattles off a few more names, as they quickly respond in the affirmative. The group of you get up and follow Rich out the door. Tim's with you.
+				
+				If Tim could show emotion, his face would be pale. Thankfully, his body betrays his mood, shaking violently.
+					*goto_scene warmup
 			#Stay behind.
-				*goto_scene erratic
+				Rich nods at your decision as a small group of people leave with him. Soon comes your new manager.
+					*goto_scene erratic
 	#"Yes, sir."
 		*set optimism +4
 		"Glad to see you respond well. Time to pick your poison. We got two subgroups of study goin' down before we get to the fun stuff. You can either come with me and do some heavy liftin'..."
 		
 		"Or you can stay behind and wait for the next instructor. She won't be as stressful, at least not in the [i] traditional [/i] sense."
 		*choice
-			#Go with the Husk.
-				*goto_scene warmup
+			#Go with the Husk
+				*goto_scene warm up
 			#Stay behind.
 				*goto_scene erratic
 	#Stay silent.
@@ -138,7 +142,7 @@ We're going to have you split up into groups, help to [i] diversify [/i] your sk
 							*goto_scene warmup
 					#Stay silent.
 						"...I warned you."
-						
+							
 						The Husks drag you down into a dark hallway, away from the group and Rich. The Husks' grip tightens significantly around your arm, and your vision grows dark.
 							*goto_scene hell
 			#Answer the Husk.
@@ -150,5 +154,19 @@ We're going to have you split up into groups, help to [i] diversify [/i] your sk
 				
 				If Tim could show emotion, his face would be pale. Thankfully, his body betrays his mood, shaking violently.
 					*goto_scene warmup
+					
+	#"${fName} ${lName} reporting for work, sir!"
+		*set confidence +4
+		*set optimism +4
+		"Now that's what I want to hear! That right there is going to be the ideal worker for this group."
 		
-	
+		Rich waves his arm at you, beckoning you over. Rising to your feet, you feel the eyes of everyone on your back.
+		
+		He puts his arm around you, pulling you in close and whispers into your ear. "As much as I would love to have you work under me, I feel like you're better suited for our next manager."
+		
+		"So, for me, take a seat and relax. She'll be in shortly for you." Rich says in a paternal manner. Taking your seat, you await the next manager.
+		
+		*finish
+			*goto_scene erratic
+			
+		
