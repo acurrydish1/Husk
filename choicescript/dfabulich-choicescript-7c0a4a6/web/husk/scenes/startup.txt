@@ -22,7 +22,12 @@
 	warmup
 	erratic
 	hell
-
+	discovery
+	damaged
+	malfunction
+	stealth
+	awakened
+	
 *create fName 0
 *create lName 0
 *create melancholy 1
