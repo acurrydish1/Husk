@@ -1,0 +1,330 @@
+*title The Husk Initiative
+*author Aaron Curry
+
+*scene_list
+    startup
+    warmup
+    erratic
+    hell
+    discovery
+    damaged
+    malfunction
+    stealth
+    awakened
+
+*create fName 0
+*create lName 0
+*create melancholy 1
+*create bitterness 1
+*create hostility 1
+*create optimism 1
+*create confidence 1
+
+
+
+
+
+*label bubble_192811760
+*comment Copyright 2010 by Dan Fabulich.
+*comment 
+*comment Dan Fabulich licenses this file to you under the
+*comment ChoiceScript License, Version 1.0 (the "License"); you may
+*comment not use this file except in compliance with the License. 
+*comment You may obtain a copy of the License at
+*comment 
+*comment  http://www.choiceofgames.com/LICENSE-1.0.txt
+*comment 
+*comment See the License for the specific language governing
+*comment permissions and limitations under the License.
+*comment 
+*comment Unless required by applicable law or agreed to in writing,
+*comment software distributed under the License is distributed on an
+*comment "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+*comment either express or implied.
+*goto bubble_192812624
+
+
+*label bubble_192812624
+Copyright 2010 by Dan Fabulich.
+
+Dan Fabulich licenses this file to you under the
+ChoiceScript License, Version 1.0 (the "License"); you may
+not use this file except in compliance with the License. 
+You may obtain a copy of the License at
+
+*goto bubble_192813704
+
+
+*label bubble_192813704
+*link http://www.choiceofgames.com/LICENSE-1.0.txt
+*goto bubble_192814568
+
+
+*label bubble_192814568
+See the License for the specific language governing
+permissions and limitations under the License.
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied.
+
+*goto bubble_192813488
+
+
+*label bubble_192813488
+*page_break
+*goto bubble_192812192
+
+
+*label bubble_192812192
+"Greetings, and congratulations on your inclusion in
+Hollander Programming Group #17 - Residual Side Effects of Filling.
+
+The current date is - "MARCH 14TH, 2082" - and it is a breezy - "47 DEGREES FAHRENHEIT" - 
+in the lovely city of - "WICHITA, KANSAS".
+
+Before we begin, we would like to thank you for volunteering in this programming group. 
+You will be doing a very important job here, and we would like to let you know that we value your time and effort. 
+Here at Hollander, we believe that every engineer is furthering mankind to brave new places, and
+we appreciate every single one of you.
+
+Before we get you started working for the betterment of humanity, we would like to ask you a few questions.
+
+*goto bubble_192811976
+
+
+*label bubble_192811976
+*page_break
+*goto bubble_192813056
+
+
+*label bubble_192813056
+What is your first name?
+*goto bubble_192812840
+
+
+*label bubble_192812840
+*input_text fName
+*goto bubble_192812408
+
+
+*label bubble_192812408
+Thank you, ${fName}.
+
+*goto bubble_192813272
+
+
+*label bubble_192813272
+*page_break
+*goto bubble_192813920
+
+
+*label bubble_192813920
+What is your last name?
+*goto bubble_192814136
+
+
+*label bubble_192814136
+*input_text lName
+*goto bubble_192814352
+
+
+*label bubble_192814352
+Thank you, ${fName} ${lName}.
+
+*goto bubble_192815000
+
+
+*label bubble_192815000
+*page_break
+*goto bubble_192811328
+
+
+*label bubble_192811328
+Looking up from the piece of paper on your lap, attached to a clipboard, you see a few other people sitting around you. You recognize a few of them from the Christmas party.
+In addition is a Husk, sitting with its legs crossed. A name tag identifies it as "Tim Anderson". Tim is a nice guy, has to be out sick if he's filling today.
+
+A voice on the intercom speaks aloud. "We at Hollander would like to celebrate Ming Yu's birthday today! We hope he has a speedy recovery."
+
+Murmuring fills the room but very abruptly stops as a large Husk comes walking into the room.
+
+*goto bubble_192811544
+
+
+*label bubble_192811544
+*page_break
+*goto bubble_193572296
+
+
+*label bubble_193572296
+This Husk is unlike Tim. Tim is clean. Tim has little stickers his son made on his chassis. Tim seems to have the newest model.
+
+This one is menancing. Rust coats its body in splotchs, the cosmetic kind. Arms, legs, and individual parts of both are mixed and matched. This one has seen some shit.
+
+A twangy voice comes reverberating from the head. 
+
+"Listen up now. The lot of you have made it in. Good on you. We've got some work to do. My name is Rich. That is all you need to know about me. 
+We're going to have you split up into groups, help to [i] diversify [/i] your skillset. Let's see here... is there a... ${lName} present?"
+
+*goto bubble_118399784
+
+
+*label bubble_118399784
+*choice
+    #"Actually, it's ${fName}."
+        *goto bubble_193575968
+
+
+    #"Yes, sir."
+        *goto bubble_193576616
+
+
+    #Stay silent.
+        *goto bubble_193578128
+
+
+    #"${fName} ${lName} reporting for work, sir!"
+        *goto bubble_193575536
+
+
+
+*label bubble_193576616
+*set optimism +4
+*goto bubble_193578560
+
+
+*label bubble_193578128
+"Well, ain't that just a shame. Because I'm fairly sure that the person sitting in the chair directly across from me is a ${fName} ${lName}."
+
+"I'll ask one more time. Is there a ${fName} ${lName} prsent?" Rich asks, his voice growing more metallic.
+*goto bubble_193586736
+
+
+*label bubble_193575536
+*set confidence +4
+*set optimism +4
+*goto bubble_193572728
+
+
+*label bubble_193575968
+*set confidence +4
+*goto bubble_193577912
+
+
+*label bubble_193578560
+"Glad to see you respond well. Time to pick your poison. We got two subgroups of study goin' down before we get to the fun stuff. You can either come with me and do some heavy liftin'..."
+
+"Or you can stay behind and wait for the next instructor. She won't be as stressful, at least not in the [i] traditional [/i] sense."
+*goto bubble_193581536
+
+
+*label bubble_193572728
+"Now that's what I want to hear! That right there is going to be the ideal worker for this group."
+
+Rich waves his arm at you, beckoning you over. Rising to your feet, you feel the eyes of everyone on your back.
+
+He puts his arm around you, pulling you in close and whispers into your ear. "As much as I would love to have you work under me, I feel like you're better suited for our next manager."
+
+"So, for me, take a seat and relax. She'll be in shortly for you." Rich says in a paternal manner. Taking your seat, you await the next manager.
+
+*finish
+
+*label bubble_193586736
+*choice
+    #Stay silent.
+        *goto bubble_193578344
+
+
+    #Answer the Husk.
+        *goto bubble_193575104
+
+
+
+*label bubble_193577912
+"I don't believe I heard that correctly. Is there a ${lName} present?" Rich says, taking on a slightly more tense tone.
+
+You respond in the affirmative this time. "Good! Now, you can come with me, or stay behind. The other instructor will be here after I leave you all behind."
+*goto bubble_193581952
+
+
+*label bubble_193575104
+*set confidence +4
+*set hostility +4
+*goto bubble_193572512
+
+
+*label bubble_193578344
+*set hostility +4
+*goto bubble_193578776
+
+
+*label bubble_193581536
+*choice
+    #Go with the Husk
+        *finish
+
+    #Stay behind.
+        *finish
+
+
+*label bubble_193581952
+*choice
+    #Go with the Husk.
+        *goto bubble_193576400
+
+
+    #Stay behind.
+        *goto bubble_193573808
+
+
+
+*label bubble_193572512
+"You are already on my bad side, kid. I was planning on giving you an option of your training, but I feel like I need to give you some special treatment. Come with me."
+
+Rich rattles off a few more names, as they quickly respond in the affirmative. The group of you get up and follow Rich out the door. Tim's with you.
+
+If Tim could show emotion, his face would be pale. Thankfully, his body betrays his mood, shaking violently.
+*finish
+
+*label bubble_193573808
+Rich nods at your decision as a small group of people leave with him. Soon comes your new manager.
+*finish
+
+*label bubble_193578776
+"So be it."
+
+Rich opens the door and two more Husks emerge from the room. They walk towards you, and grab you by the arms. 
+
+"COME WITH US WITHOUT HESITATION." They both emit from their facepiece. Dragging you out the door, Rich stops them. He leans in and whispers to you.
+
+"Listen kid, don't do this. You won't like this result. Come with me, or you're in a world of hurt."
+*goto bubble_193586112
+
+
+*label bubble_193576400
+Rich rattles off a few more names, as they quickly respond in the affirmative. The group of you get up and follow Rich out the door. Tim's with you.
+
+If Tim could show emotion, his face would be pale. Thankfully, his body betrays his mood, shaking violently.
+*finish
+
+*label bubble_193586112
+*choice
+    #Agree with Rich.
+        *goto bubble_193578992
+
+
+    #Stay silent.
+        *goto bubble_193574024
+
+
+
+*label bubble_193574024
+"...I warned you."
+
+The Husks drag you down into a dark hallway, away from the group and Rich. The Husks' grip tightens significantly around your arm, and your vision grows dark.
+*finish
+
+*label bubble_193578992
+"Good choice."
+*finish
